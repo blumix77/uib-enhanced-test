@@ -1,0 +1,88 @@
+:root {
+    font-size: 16px;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+ul {
+    display: flex;
+    margin: 20px;
+    list-style-type: none;
+    font-size: 1.4rem;
+}
+
+h2 {
+    margin: 50px;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.4em;
+    margin: 0px 20px 0px 20px;
+}
+
+.stickyBox {
+    text-align: center;
+    position: sticky;
+    background: yellow;
+    top: 0;
+    margin-top: 0;
+    height: 50px;
+    z-index: 1; 
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.fixedBox {
+    position: fixed;
+    right: 50vw;
+    top: 70vh;
+    width: 150px;
+    height: 150px;
+    background: red;
+    z-index: 1;
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+@media (min-width: 800px)/*  and (width: 200px) */ {
+    .fixedBox {
+        display: none; 
+    }
+    .absoluteBox {
+        background: yellow;
+        text-decoration: line-through;
+    }
+
+}
+
+.absoluteBox {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 70vh;
+    right: 100px;
+    background: green;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+.relativeBox {
+    position: relative;
+    width: 60px;
+    height:60px;
+    background: black;
+    color: white;
+    border: 1px solid white;
+    top: 90px;
+}
+
